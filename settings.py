@@ -21,8 +21,6 @@ from pathlib import Path
 """
 
 # Use this flag as 'if pyttman.settings.DEV_MODE:' for debugging purposes.
-# Note! This is automatically set to True if you run your app in dev mode, as:
-# 'pyttman dev <app name>' .
 DEV_MODE = False
 
 
