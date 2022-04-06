@@ -31,7 +31,7 @@ DEV_MODE = False
 APPEND_LOG_FILES = True
 
 # Configure the behavior of the MessageRouter here
-MESSAGE_ROUTER = {
+MIDDLEWARE = {
 
     # The MessageRouter routes messages to your app's Intent classes.
     # To see the available classes and choose on that fits your app,
@@ -51,6 +51,16 @@ MESSAGE_ROUTER = {
     # a message. The keyword is case insensitive and has to occur as
     # first string in the message from the user.
     "HELP_KEYWORD": "help",
+    
+    # This text is what will be returned to users if your app runs in to
+    # a fatal error from which no Reply object could be returned to the client.
+    # That is - in the worst thinkable scenario, this message should still
+    # reach your users and hint to them that an error occurred, and your
+    # app isn't simply ignoring them by keeping quiet.
+    # In the log files of your Pyttman app, you can track down the error
+    # by searching for the Error UUID written in chat when the error occurred.
+    FATAL_EXCEPTION_AUTO_REPLY = "I'm sorry, something went wrong. Try again" \
+                                 " in a few moments."
 }
 
 # Define your Ability classes here, with path starting from your project
@@ -61,15 +71,6 @@ MESSAGE_ROUTER = {
 # ABILITIES = ["my_app.abilities.filename.AbilityClassName"]
 ABILITIES = []
 
-# This text is what will be returned to users if your app runs in to
-# a fatal error from which no Reply object could be returned to the client.
-# That is - in the worst thinkable scenario, this message should still
-# reach your users and hint to them that an error occurred, and your
-# app isn't simply ignoring them by keeping quiet.
-# In the log files of your Pyttman app, you can track down the error
-# by searching for the Error UUID written in chat when the error occurred.
-FATAL_EXCEPTION_AUTO_REPLY = "I'm sorry, something went wrong. Try again" \
-                             " in a few moments."
 
 # Define the client which your Pyttman app uses as its front end here.
 # There are Client classes available to use which Pyttman provides for you,
