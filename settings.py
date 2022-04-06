@@ -80,7 +80,6 @@ ABILITIES = []
 # TIP! Unsure of what to put here?
 # Check out the documentation:
 # https://github.com/dotchetter/Pyttman/wiki/Clients
-
 CLIENT = {}
 
 # No need to change this setting
