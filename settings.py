@@ -57,8 +57,8 @@ MIDDLEWARE = {
     # app isn't simply ignoring them by keeping quiet.
     # In the log files of your Pyttman app, you can track down the error
     # by searching for the Error UUID written in chat when the error occurred.
-    "FATAL_EXCEPTION_AUTO_REPLY" = "I'm sorry, something went wrong. Try again" \
-                                 " in a few moments."
+    "FATAL_EXCEPTION_AUTO_REPLY": "I'm sorry, something went wrong. Try again" \
+                                  " in a few moments."
 }
 
 # Define your Ability classes here, with path starting from your project
