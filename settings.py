@@ -89,7 +89,7 @@ APP_BASE_DIR = Path(os.path.dirname(os.path.realpath(__file__)))
 LOG_FILE_DIR = APP_BASE_DIR / Path("logs")
 
 # Set desired logging format
-LOG_FORMAT = logging.BASIC_FORMAT
+LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 
 LOG_TO_STDOUT = False
 
