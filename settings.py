@@ -1,7 +1,7 @@
 import logging
 import os
 from pathlib import Path
-
+import pytz
 
 """
     Welcome to the settings module! Please take a minute to read
@@ -19,10 +19,12 @@ from pathlib import Path
     then using them here in this file with `os.getenv("my_api_token")` 
     for example.
 """
-
+e
 # Use this flag as 'if pyttman.settings.DEV_MODE:' for debugging purposes.
 DEV_MODE = False
 
+# Timezone for usage within application, optional. Doesn't affect any Pyttman framework components.
+TIME_ZONE = pytz.timezone("Europe/Stockholm")
 
 # Create a new log file for each time your app starts,
 # or append the most recent one.
@@ -84,6 +86,9 @@ CLIENT = {}
 
 # No need to change this setting
 APP_BASE_DIR = Path(os.path.dirname(os.path.realpath(__file__)))
+
+# Location for the static_files directory, suitable for storing static files used in the project.
+STATIC_FILES_DIR = APP_BASE_DIR / "static_files"
 
 # No need to change this setting
 LOG_FILE_DIR = APP_BASE_DIR / Path("logs")
