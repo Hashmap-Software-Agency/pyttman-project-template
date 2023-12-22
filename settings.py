@@ -1,6 +1,6 @@
-import logging
 import os
 from pathlib import Path
+
 import pytz
 
 """
@@ -19,7 +19,7 @@ import pytz
     then using them here in this file with `os.getenv("my_api_token")` 
     for example.
 """
-e
+
 # Use this flag as 'if pyttman.settings.DEV_MODE:' for debugging purposes.
 DEV_MODE = False
 
@@ -101,3 +101,5 @@ LOG_TO_STDOUT = False
 # This setting is set by pyttman-cli when you create your project.
 # Do not change it afterwards without also renaming the directory
 # for your app.
+
+APP_NAME = "testapp"
