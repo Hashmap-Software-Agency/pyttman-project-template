@@ -1,8 +1,6 @@
 import os
 from pathlib import Path
 
-import pytz
-
 """
     Welcome to the settings module! Please take a minute to read
     this little introduction, if it's your first time here.
@@ -22,9 +20,6 @@ import pytz
 
 # Use this flag as 'if pyttman.settings.DEV_MODE:' for debugging purposes.
 DEV_MODE = False
-
-# Timezone for usage within application, optional. Doesn't affect any Pyttman framework components.
-TIME_ZONE = pytz.timezone("Europe/Stockholm")
 
 # Create a new log file for each time your app starts,
 # or append the most recent one.
