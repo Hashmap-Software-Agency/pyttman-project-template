@@ -79,6 +79,9 @@ ABILITIES = []
 # https://github.com/dotchetter/Pyttman/wiki/Clients
 CLIENT = {}
 
+# Load plugins here. Plugins can widely extend the functionality of your application.
+PLUGINS = []
+
 # No need to change this setting
 APP_BASE_DIR = Path(os.path.dirname(os.path.realpath(__file__)))
 
